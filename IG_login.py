@@ -39,4 +39,4 @@ class InstaBot:
         sleep(30)
 
 
-InstaBot(nombre, entrar)
+InstaBot(nombre, password)
