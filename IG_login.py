@@ -1,11 +1,14 @@
 from selenium import webdriver
 from time import sleep
-from secreto import entrar
-
-nombre = "danielajg"
-password = entrar
 
 
+# Introduce login details
+nombre = ""
+password = ""
+
+
+# Login bot. Launches instagram.com, sends username and password, clicks on login button, 
+# and clicks on the next two "Ahora no" buttons that prompt you to save your login details
 class InstaBot:
     def __init__(self, nombre, password):
         self.driver = webdriver.Chrome()
@@ -36,4 +39,4 @@ class InstaBot:
         sleep(30)
 
 
-InstaBot('danieljag', entrar)
+InstaBot(nombre, entrar)
